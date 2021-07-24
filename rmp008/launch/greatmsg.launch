@@ -1,0 +1,5 @@
+<launch>
+    <node name="mom" type="mom.py" pkg="rmp008"/>
+    <node name="son" type="son.py" pkg="rmp008"/>
+    <node name="sister" type="sister.py" pkg="rmp008"/>
+</launch>
