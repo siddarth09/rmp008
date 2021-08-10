@@ -1,0 +1,23 @@
+model2_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  Rev15_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev15
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev16_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev16
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev17_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev17
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev18_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev18
+    pid: {p: 100.0, i: 0.01, d: 10.0}
